@@ -1,0 +1,10 @@
+m365-hybrid-aad-join READ ME
+
+Steps to Execute the Script:
+1.	Install the Azure AD Connect Module: Ensure that the Azure AD Connect module is installed on the machine where you will run the script.
+2.	Run the Script: Execute the script in a PowerShell session with administrative privileges.
+3.	Verify Device Registration: After running the script, verify that the devices are registered with Azure AD and are visible in the Intune portal.
+Additional Configuration:
+•	Group Policy: Ensure that the group policy for device registration is configured correctly. This can be done by setting the group policy for "Register domain-joined computers as devices" to "Enabled".
+•	Azure AD Connect Configuration: Make sure that Azure AD Connect is configured to support device writeback and hybrid Azure AD join.
+This script assumes that all prerequisites for MDM and Intune have been completed, including the necessary configurations in Azure AD and Intune.
